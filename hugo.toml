@@ -1,0 +1,12 @@
+baseURL = 'https://runxiyu.org/'
+languageCode = 'en-us'
+title = 'Runxi Yu'
+
+[permalinks]
+blog = "/blog/:filename"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.tableOfContents]
+ordered = true

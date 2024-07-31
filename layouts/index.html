@@ -1,0 +1,31 @@
+{{ partial "head.html" . }}
+<h1>{{$.Title}}</h1>
+
+<main class="index flexcols">
+	<aside class="flexcol">
+		<p style="margin-top: 0rem;">
+		I am Runxi Yu, 于润熙, a 16-year-old student from Shanghai.
+		</p>
+		<ul>
+			<li><code>runxiyu</code> on <a href="https://irc.runxiyu.org">rx</a> and many IRC networks</li>
+			<li>email <a href="mailto:me@runxiyu.org">me@runxiyu.org</a></li>
+			<li><a href="https://sr.ht/~runxiyu">sr.ht</a> <a href="https://codeberg.org/runxiyu">codeberg</a> <a href="https://github.com/runxiyu">github</a></li>
+			<li><a href="https://git.runxiyu.org">git</a> <a href="https://git.andrewyu.org">contrib</a></li>
+			<li><a href="https://docs.runxiyu.org">docs</a> <a href="https://git.runxiyu.org/runxiyu/tg.git">TeX</a></li>
+			<li><a href="https://ykps.runxiyu.org">ykps utils</a></li>
+			<li><a class="rss" href="/blog/index.xml">rss</a> <a href="/misc/">misc</a></li>
+		</ul>
+	</aside>
+	<section class="article-list flexcol">
+
+		{{ range (where (where .Site.RegularPages "Section" "blog") "Params.nohtml" "!=" "true") }}
+		{{- if .OutputFormats.Get "html" }}
+		<div class="article">
+			<span class="date">{{.Date.Format "January 2, 2006"}}</span>
+			<a href="{{.Permalink}}">{{.Title}}</a>
+		</div>
+		{{ end }}
+		{{ end }}
+	</section>
+
+</main>
