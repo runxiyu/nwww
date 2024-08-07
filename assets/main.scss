@@ -8,6 +8,9 @@
  */
 
 $black: #080808;
+$boxbg: rgb(235, 235, 235);
+$border: rgb(180, 180, 180);
+
 html {
 	font-family: sans-serif;
 	color: $black;
@@ -191,7 +194,7 @@ details[open] {
 blockquote {
 	border-left: 5px solid #777;
 	background-color: #eee;
-	padding: 0.5rem 1rem; /* XXX */
+	padding: 0.25rem 0.5rem; /* XXX */
 	margin-left: 0;
 	margin-right: 0;
 	blockquote {
@@ -238,6 +241,8 @@ dl {
 	}
 }
 
+/*
+// Drew's table config
 table {
 	color: #333;
 	background: white;
@@ -257,6 +262,55 @@ table caption {
 table th,table td {
 	padding: .5em;
 	border: 1px solid lightgrey;
+}
+*/
+
+// FBFP's table config, inspired by sr.ht
+
+table {
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+	border-collapse: collapse;
+	border: 2px solid $border;
+	font-size: 90%;
+}
+
+table.wide {
+	width: 100%;
+}
+
+th[scope~="row"] {
+	width: 6em;
+	text-align: right;
+}
+
+th[scope~="col"] {
+	/* text-align: left; */
+}
+
+td {
+	border: 1px solid;
+	text-align: left;
+	height: 1.25rem;
+	border: 1px solid $border;
+	padding: 3px 5px;
+}
+
+table.fat td {
+	padding: 6px 5px;
+}
+
+td.th-like, th {
+	background-color: $boxbg !important;
+	border: 1px solid $border;
+	font-weight: bold;
+	padding: 3px 5px;
+}
+
+th.min, td.min {
+	width: 0;
+	min-width: fit-content;
+	white-space: nowrap;
 }
 
 td.red {
