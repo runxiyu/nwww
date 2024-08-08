@@ -15,7 +15,12 @@ html {
 }
 
 body {
-	max-width: 920px;
+	&:not(.wider-body) {
+		max-width: 920px;
+	};
+	&.wider-body {
+		max-width: 1150px;
+	};
 	margin: 0 auto;
 	padding: 1rem;
 }
@@ -36,7 +41,7 @@ h1 {
 		flex-wrap: wrap;
 		gap: 3rem;
 	}
-	gap: 2rem;
+	gap: 5rem;
 	align-items: top;
 /* XXX */
 }
