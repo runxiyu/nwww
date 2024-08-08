@@ -1,5 +1,5 @@
-<!-- Copyright (c) 2020 Drew DeVault -->
-<!-- Copyright (c) 2024 Runxi Yu -->
+{{- /* Copyright (c) 2020 Drew DeVault */ -}}
+{{- /* Copyright (c) 2024 Runxi Yu */ -}}
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := slice -}}
