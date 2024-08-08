@@ -19,7 +19,7 @@ figured that I should write my own.
 
 ## C
 
-<span class="pros">Pros:</span>
+<span class="pros">Pros</span>
 
 -   [Simple](https://drewdevault.com/2017/01/30/Lessons-to-learn-from-C.html).
 -   Interoperable with almost all other languages.
@@ -32,7 +32,7 @@ figured that I should write my own.
     enough for my needs and it's not that hard to remember to add
     parenthesis.
 
-<span class="cons">Cons:</span>
+<span class="cons">Cons</span>
 
 -   Null terminated strings are objectively bad
 -   Footguns do exist, and there isn't anything like borrow checking or
@@ -45,7 +45,7 @@ figured that I should write my own.
 
 ## Go
 
-<span class="pros">Pros:</span>
+<span class="pros">Pros</span>
 
 -   Easy concurrency to write quick and relatively-scalable network
     services in.
@@ -55,7 +55,7 @@ figured that I should write my own.
 -   The best [garbage collector](https://go.dev/blog/ismmkeynote) I've
     seen in garbage-collected languages.
 
-<span class="cons">Cons:</span>
+<span class="cons">Cons</span>
 
 -   [The way zero values are handled are really
     bad](https://fasterthanli.me/articles/lies-we-tell-ourselves-to-keep-using-golang#all-or-nothing-so-let-s-do-nothing).
@@ -67,12 +67,12 @@ figured that I should write my own.
 
 ## Python
 
-<span class="pros">Pros:</span>
+<span class="pros">Pros</span>
 
 -   Code is easy to write.
 -   Good-ish ecosystem.
 
-<span class="cons">Cons:</span>
+<span class="cons">Cons</span>
 
 -   Code is hard to maintain.
 -   Really slow.
@@ -83,13 +83,13 @@ figured that I should write my own.
 
 ## Shell scripts
 
-<span class="pros">Pros:</span>
+<span class="pros">Pros</span>
 
 -   Good for gluing my desktop together, automating day-to-day tasks
     (both on the desktop and administering servers), and generating
     Makefiles.
 
-<span class="cons">Cons:</span>
+<span class="cons">Cons</span>
 
 -   A lot of bad advice on the web, and many people write disgusting
     scripts.
@@ -102,11 +102,11 @@ figured that I should write my own.
 
 ## Common Lisp
 
-<span class="pros">Pros:</span>
+<span class="pros">Pros</span>
 
 -   Really flexible. Best for, well, list parsing.
 
-<span class="cons">Cons:</span>
+<span class="cons">Cons</span>
 
 -   `#'i-still-dont-get-the-point-of-having-two-namespaces`.
 -   Dynamic typing.
@@ -115,13 +115,13 @@ figured that I should write my own.
 
 ## Lua
 
-<span class="pros">Pros:</span>
+<span class="pros">Pros</span>
 
 -   Probably the best general-purpose scripting language.
 -   Easy to use as an extension language.
 -   Lua tables are really versatile.
 
-<span class="cons">Cons:</span>
+<span class="cons">Cons</span>
 
 -   The lack of real threads is a huge pain. No, coroutines are not
     threads. (Though, no other scripting language has sane
@@ -132,12 +132,12 @@ figured that I should write my own.
 
 ## JavaScript
 
-<span class="pros">Pros:</span>
+<span class="pros">Pros</span>
 
 -   None. I wouldn't use it if there are saner alternatives in browsers,
     e.g. if WASM could access the DOM.
 
-<span class="cons">Cons:</span>
+<span class="cons">Cons</span>
 
 -   Quirks surrounding automatic type conversion and equality testing.
 -   I don't see any compelling reason for this language to exist outside
