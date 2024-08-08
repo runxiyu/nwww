@@ -21,7 +21,7 @@ disgusting, profoundly disrespectful, uneducated, rude, impudent, etc.
 It demonstrates a toxic and arrogant lack of empathy towards people with
 Down's Syndrome.
 
-But what about freedom of speech?
+> But what about freedom of speech?
 
 Interesting point, but mind the difference between what is *legal* and
 what is *right*. By the text of the statutes this may be legal, but note
