@@ -1,5 +1,6 @@
 ---
 title: "Democracy: Some fundamentals"
+date: 2022-07-28
 ---
 
 *Unless otherwise specified, "democracy" in this article refers to

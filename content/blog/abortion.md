@@ -1,5 +1,6 @@
 ---
 title: Abortion
+date: 2022-07-26
 ---
 
 This was written quite a while ago and I should update it sometime...

@@ -1,5 +1,6 @@
 ---
 title: Please stop mocking Down's Syndrome
+date: 2024-06-09
 ---
 
 It has been a while since the onset of this rather unfortunate pattern,

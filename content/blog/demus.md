@@ -1,5 +1,6 @@
 ---
 title: "Random thoughts on US Democracy"
+date: 2022-08-09
 ---
 
 

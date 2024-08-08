@@ -1,5 +1,6 @@
 ---
 title: Using chroots as simple "containers"
+date: 2024-06-26
 ---
 
 Please note that what I am about to do isn't actually containerization

@@ -1,5 +1,6 @@
 ---
 title: Gender-inclusive pronouns in Chinese
+date: 2023-08-01
 ---
 
 "他" uses the "人" (person) radical, and should cover all people, because not all people are male.
