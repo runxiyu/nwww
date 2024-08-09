@@ -28,12 +28,14 @@ X11 isn't going to work. What I ended up doing was the following:
 
 **`$HOME/.xkb/symbols/gbcustom`**
 
-    default partial alphanumeric_keys
-    xkb_symbols "basic" { // leave "basic" in-tact unless you know what you're doing
-        include "gb" // or whatever base layout you use, most likely "us"
-        name[Group1] = "English (UK) Customized";
-        key <CAPS> { [ Shift_L, Shift_L, Shift_L, Shift_L ] };
-    };
+```
+default partial alphanumeric_keys
+xkb_symbols "basic" { // leave "basic" in-tact unless you know what you're doing
+	include "gb" // or whatever base layout you use, most likely "us"
+	name[Group1] = "English (UK) Customized";
+	key <CAPS> { [ Shift_L, Shift_L, Shift_L, Shift_L ] };
+};
+```
 
 Note that here, the "`key`" lines are in the form
 `key <X> { [ A, B, C, D ] } ;`, where "`X`" is the keycode symbolic name
@@ -48,9 +50,11 @@ Shift.
 
 **`$HOME/.config/sway/config`**
 
-    input "1:1:AT_Translated_Set_2_keyboard" {
-        xkb_layout "gbcustom"
-    }
+```
+input "1:1:AT_Translated_Set_2_keyboard" {
+	xkb_layout "gbcustom"
+}
+```
 
 Of course, replace "`1:1:AT_Translated_Set_2_keyboard`" with your actual
 keyboard identifier listed in `swaymsg -t get_inputs`. And reload Sway.
@@ -71,26 +75,31 @@ Another, potentially better method involving defining custom
 
 **`$HOME/.xkb/symbols/customsymbol`**
 
-    // Remap caps to Shift_L
-    partial modifier_keys
-    xkb_symbols "caps_lshift" {
-        replace key  {
-            type[group1] = "ONE_LEVEL",
-            symbols[group1] = [ Shift_L ],
-            actions[group1] = [ SetMods(modifiers=Shift) ]
-        };
-    };
+```
+partial modifier_keys
+xkb_symbols "caps_lshift" {
+	replace key  {
+		type[group1] = "ONE_LEVEL",
+		symbols[group1] = [ Shift_L ],
+		actions[group1] = [ SetMods(modifiers=Shift) ]
+	};
+};
+```
 
 **`$HOME/.xkb/rules/evdev`**
 
-    ! option = symbols
-      custom:caps_lshift = +customsymbol(caps_lshift)
+```
+! option = symbols
+  custom:caps_lshift = +customsymbol(caps_lshift)
 
-    ! include %S/evdev
+! include %S/evdev
+```
 
 **`$HOME/.config/sway/config`**
 
-    input "1:1:AT_Translated_Set_2_keyboard" {
-        xkb_layout "gb"
-        xkb_options "custom:caps_lshift"
-    }
+```
+input "1:1:AT_Translated_Set_2_keyboard" {
+	xkb_layout "gb"
+	xkb_options "custom:caps_lshift"
+}
+```
