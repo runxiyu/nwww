@@ -10,8 +10,12 @@ $black: #080808;
 $boxbg: rgb(235, 235, 235);
 $border: rgb(180, 180, 180);
 html {
-	font-family: sans-serif;
+	font-family: "DejaVu Sans", system-ui, sans-serif;
 	color: $black;
+}
+
+code, pre {
+	font-family: "Go Mono", "DejaVu Sans Mono", monospace;
 }
 
 body {
