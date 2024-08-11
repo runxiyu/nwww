@@ -6,16 +6,19 @@
  * Pretty-printed with a simple C program, https://git.sr.ht/~runxiyu/cssindent.
  * Not some in-browser JS bullshit on an external site.
  */
-$black: #080808;
-$boxbg: rgb(235, 235, 235);
-$border: rgb(180, 180, 180);
 html {
 	font-family: "DejaVu Sans", system-ui, sans-serif;
-	color: $black;
+	--bg: #EEEFF1;
+	--fg: #1E1F21;
+	--boxbg: rgb(235, 235, 235);
+	--border: rgb(180, 180, 180);
+	--dim-text-color: #333;
+	color: var(--fg);
+	background-color: var(--bg);
 }
 
 code, pre {
-	font-family: "Go Mono", "DejaVu Sans Mono", monospace;
+	font-family: "DejaVu Sans Mono", monospace;
 }
 
 body {
@@ -66,7 +69,7 @@ h1 {
 		}
 		.date {
 			display: block;
-			color: #333;
+			color: var(--dim-text-color);
 		}
 	}
 	aside {
@@ -122,7 +125,7 @@ article {
 	.comment {
 		margin: 2rem auto 0;
 		max-width: 80%;
-		color: #333;
+		color: var(--dim-text-color);
 	}
 }
 
@@ -134,7 +137,7 @@ footer {
 	margin-top: 2rem;
 	text-align: center;
 	font-size: 0.8rem;
-	color: #333;
+	color: var(--dim-text-color);
 }
 
 .float-img {
@@ -149,48 +152,48 @@ footer {
 }
 
 pre {
-	background-color: #eee;
+	background-color: #272822;
 	padding: 0.25rem 1rem;
 	margin: 0 -1rem;
 	max-width: 100%;
 	overflow-x: auto;
-	.cp {
-		color: #800;
-	}
-	.k {
-		color: #008;
-	}
-	.kt, .kd, .kc {
-		color: #44F;
-	}
-	.s {
-		color: #484;
-		font-style: italic;
-	}
-	.cm, .c1 {
-		color: #333;
-		font-style: italic;
-	}
-	.gi {
-		color: green;
-	}
-	.gd {
-		color: red;
-	}
-	.gu {
-		color: blue;
-	}
+	// .cp {
+	// 	color: #800;
+	// }
+	// .k {
+	// 	color: #008;
+	// }
+	// .kt, .kd, .kc {
+	// 	color: #44F;
+	// }
+	// .s {
+	// 	color: #484;
+	// 	font-style: italic;
+	// }
+	// .cm, .c1 {
+	// 	color: #333;
+	// 	font-style: italic;
+	// }
+	// .gi {
+	// 	color: green;
+	// }
+	// .gd {
+	// 	color: red;
+	// }
+	// .gu {
+	// 	color: blue;
+	// }
 }
 
 summary {
 	cursor: pointer;
-	background-color: #eee;
+	background-color: var(--boxbg);
 	padding: 0.25rem 1rem;
 	margin: 0 -1rem;
 }
 
 details[open] {
-	border-bottom: 1rem solid #eee;
+	border-bottom: 1rem solid var(--boxbg);
 	margin: 0 -1rem 1rem;
 	padding: 0 1rem;
 }
@@ -201,7 +204,7 @@ details[open] {
 
 blockquote {
 /* border-left: 5px solid #777; */
-	background-color: #eee;
+	background-color: var(--boxbg);
 	padding: 0.25rem 0.5rem;
 /* XXX */
 	margin-left: 0;
@@ -276,7 +279,7 @@ table {
 	margin-top: 0.4em;
 	margin-bottom: 0.4em;
 	border-collapse: collapse;
-	border: 2px solid $border;
+	border: 2px solid var(--border);
 	font-size: 90%;
 }
 
@@ -297,7 +300,7 @@ td {
 	border: 1px solid;
 	text-align: left;
 	height: 1.25rem;
-	border: 1px solid $border;
+	border: 1px solid var(--border);
 	padding: 3px 5px;
 }
 
@@ -306,28 +309,26 @@ table.fat td {
 }
 
 td.th-like, th {
-	background-color: $boxbg !important;
-	border: 1px solid $border;
+	background-color: var(--boxbg) !important;
+	border: 1px solid var(--border);
 	font-weight: bold;
 	padding: 3px 5px;
 }
 
-th.min, td.min {
-	width: 0;
-	min-width: fit-content;
-	white-space: nowrap;
-}
-
-td.red {
-	background: #F8D7DA;
-}
-
-td.yellow {
-	background: #FFF3CD;
-}
-
-td.blue {
-	background: #CFE2FF;
+@media (prefers-color-scheme: dark)  {
+        html {
+                --bg: #1E1F21;
+                --fg: #EEEFF1;
+		--dim-text-color: #999;
+		--boxbg: #2E2F31;
+		--border: rgb(80, 80, 80);
+        }
+        :link {
+                color: #BAD7FF;
+        }
+        :visited {
+                color: #F6BAFF;
+        }
 }
 
 /* 
