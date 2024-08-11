@@ -4,10 +4,16 @@
 
 <h1>
 	{{$.Title}}
+	<small>
+		By
+		<span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
+	</small>
 </h1>
 
 <main>
-	{{.Content}}
+	<article>
+		{{.Content}}
+	</article>
 </main>
 
 </body>
