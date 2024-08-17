@@ -205,10 +205,15 @@ details[open] {
 blockquote {
 /* border-left: 5px solid #777; */
 	background-color: var(--boxbg);
-	padding: 0.25rem 0.5rem;
+	padding: 3px 3px;
 /* XXX */
 	margin-left: 0;
 	margin-right: 0;
+	ul {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+	}
 	blockquote {
 		margin-right: 0;
 		margin-left: 0;
