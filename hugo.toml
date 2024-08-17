@@ -1,6 +1,6 @@
 baseURL = 'https://runxiyu.org/'
 languageCode = 'en-us'
-title = 'Runxi Yu'
+title = "Runxi Yu's Website"
 
 [permalinks]
 blog = "/blog/:filename"
