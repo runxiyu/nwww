@@ -1,5 +1,5 @@
 ---
-title: Please stop mocking Down's Syndrome
+title: Please stop mocking Down’s Syndrome
 date: 2024-06-09
 ---
 
