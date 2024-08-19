@@ -14,7 +14,8 @@ I could use.**
 * I do not enjoy cloning a repository and figuring out that it only supports
   C++, when I was looking for a C library.
 * Anything written in Go is, in my experience, quite pleasant to hack on. Most
-  Go code I read is quite idiomatic and well-documented.
+  Go code I read is quite idiomatic and well-documented. (Except, of course,
+  for the usual shenanigans surrounding error handling and zero values.)
 * Python code generally has a wide range of quality to expect from.
 * I am willing to hack on projects written in Rust, but I need to spend extra
   time to do so, along with ensuring that I have my more powerful laptop nearby
