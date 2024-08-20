@@ -3,7 +3,12 @@ title: Some random log about transphobia and rationality
 date: 2023-08-25
 ---
 
-**This page is a mess.**
+<details>
+<summary>
+This page is a mess. It is too emotional, some of the content hasn't
+been vetted properly before I wrote them down... it's probably not a
+worthwhile read. Expand the summary tag if you really want to read it.
+</summary>
 
 Content warnings: Science mysticism, bigotry, transphobia, 
 vomit, Descartes, Hegel, questioning existence, rationalism,
@@ -100,3 +105,5 @@ rationally proven beyond a reasonable doubt.
 And perhaps this is when things start clicking for me. Perhaps I could,
 under my own conscious will and conscience, whether free or controlled,
 loosen my grip on rationality, logic, and proof.
+
+</details>
