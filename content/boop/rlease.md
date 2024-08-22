@@ -17,7 +17,7 @@ romantic relationships.
 The key words **MUST**, **MUST NOT**, **REQUIRED**, **SHALL**, **SHALL
 NOT**, **SHOULD**, **SHOULD NOT**, **RECOMMENDED**,  **MAY**, and
 **OPTIONAL** in this document are to be interpreted as described in
-[RFC 2119](https://www.rfc-editor.org/rfc/rfc6919.html).
+[RFC 2119](https://www.rfc-editor.org/rfc/rfc2119.html).
 
 1. The relationship is a *lease*, and automatically ends on a
    pre-determined date. Let this date be known as the *release date*.

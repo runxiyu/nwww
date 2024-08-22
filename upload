@@ -1,2 +1,2 @@
 #!/bin/sh
-hugo && rsync --chmod=u=rwX,go=rX -rv public/ me@v4.runxiyu.org:/var/www/root/
+hugo && rsync --chmod=u=rwX,go=rX -rv public/ me@runxiyu.org:/var/www/root/
