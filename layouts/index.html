@@ -28,7 +28,7 @@
 				</tr>
 				<tr>
 					<th scope="row">git</th>
-					<td><a href="https://git.runxiyu.org">git.rx</a> <a href="https://git.andrewyu.org">contrib</a> <a href="https://sr.ht/~runxiyu">sr.ht</a> <a href="https://codeberg.org/runxiyu">codeberg</a> <a href="https://github.com/runxiyu">github</a></td>
+					<td><strong><a href="https://git.runxiyu.org">git.rx</a></strong> <a href="https://git.andrewyu.org">contrib</a> <a href="https://sr.ht/~runxiyu">sr.ht</a> <a href="https://codeberg.org/runxiyu">codeberg</a> <a href="https://github.com/runxiyu">github</a></td>
 				</tr>
 				<tr>
 					<th scope="row">sites</th>
@@ -36,11 +36,11 @@
 				</tr>
 				<tr>
 					<th scope="row">misc</th>
-					<td><a class="rss" href="/blog/index.xml">rss</a></td>
+					<td><strong><a class="rss" href="https://git.runxiyu.org/runxiyu/philo.git/plain/meltsand.pdf">poetry</a></strong> <a class="rss" href="/blog/index.xml">rss</a></td>
 				</tr>
 				<tr>
 					<th scope="row">pronouns</th>
-					<td>they/<a href="/blog/zhpronoun">他</a></td>
+					<td>they/<a href="/blog/zhpronoun">他</a> (please try to respect pronouns)</td>
 				</tr>
 				<tr>
 					<th scope="row">zoneinfo</th>
@@ -52,7 +52,6 @@
 		{{.Content}}
 	</aside>
 	<section class="article-list flexcol">
-
 		{{ range (where (where .Site.RegularPages "Section" "blog") "Params.nohtml" "!=" "true") }}
 		{{- if .OutputFormats.Get "html" }}
 		<div class="article">
