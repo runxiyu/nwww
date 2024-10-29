@@ -319,6 +319,13 @@ td.th-like, th {
 	}
 }
 
+.almost-transparent {
+	opacity: 10%;
+}
+.almost-transparent:hover {
+	opacity: 50%;
+}
+
 
 /* 
  * vim: ts=8 sw=8 noexpandtab

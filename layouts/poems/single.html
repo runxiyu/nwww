@@ -7,10 +7,6 @@
 
 <h1>
 	{{$.Title}}
-	<small>
-		In <a href="./">Poems</a>, On
-		<span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
-	</small>
 </h1>
 
 <main>
@@ -19,7 +15,9 @@
 	</article>
 </main>
 
-{{ partial "footer.html" }}
+<small class="almost-transparent">
+	<a href="../">Poems</a> by <a href="{{.Site.BaseURL}}">Runxi Yu</a>
+</div>
 
 </body>
 
