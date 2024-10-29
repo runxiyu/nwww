@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>{{.Title}}</title>
+		{{ $style := resources.Get "main.css" | resources.Minify | resources.Fingerprint }}
+		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	</head>
+	<body>
+		<h1>
+			{{$.Title}}
+			<small>
+				On
+				<span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
+			</small>
+		</h1>
+		<section class="article-list">
+			{{ range (where (where .Site.RegularPages "Section" "poems") "Params.nohtml" "!=" "true") }}
+			{{- if .OutputFormats.Get "html" }}
+			<div class="article">
+			<!-- <span class="date">{{.Date.Format "January 2, 2006"}}</span> -->
+				<a href="{{.Permalink}}">{{.Title}}</a>
+			</div>
+			{{ end }}
+			{{ end }}
+		</section>
+		{{ partial "footer.html" . }}
+	</body>
+</html>

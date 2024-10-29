@@ -13,6 +13,8 @@ html {
 	--boxbg: rgb(235, 235, 235);
 	--border: rgb(180, 180, 180);
 	--dim-text-color: #333;
+	--link-color: #24527d;
+	--text-decoration-color: #CCC;
 	color: var(--fg);
 	background-color: var(--bg);
 }
@@ -69,7 +71,7 @@ h1 small {
 	max-width: 920px;
 }
 
-.index .article-list .article {
+.article-list .article {
 	margin-bottom: 1rem;
 }
 
@@ -144,7 +146,12 @@ article .comment {
 }
 
 a:link {
-	text-decoration: none;
+	text-decoration-color: var(--text-decoration-color);
+	color: var(--link-color);
+}
+a:visited {
+	text-decoration-color: var(--text-decoration-color);
+	color: var(--link-color);
 }
 
 .footnotes {
@@ -303,12 +310,8 @@ td.th-like, th {
 		--dim-text-color: #999;
 		--boxbg: #2E2F31;
 		--border: rgb(80, 80, 80);
-	}
-	:link {
-		color: #bad7ff;
-	}
-	:visited {
-		color: #f6baff;
+		--link-color: #5ca7ed;
+		--text-decoration-color: #474747;
 	}
 }
 

@@ -36,7 +36,7 @@
 				</tr>
 				<tr>
 					<th scope="row">misc</th>
-					<td><strong><a class="rss" href="https://git.runxiyu.org/runxiyu/philo.git/plain/meltsand.pdf">poetry</a></strong> <a class="rss" href="/blog/index.xml">rss</a></td>
+					<td><strong><a class="rss" href="poems">poems</a></strong> <a class="rss" href="/blog/index.xml">rss</a></td>
 				</tr>
 				<tr>
 					<th scope="row">pronouns</th>
@@ -49,10 +49,9 @@
 
 			</tbody>
 		</table>
-		<p style="opacity: 50%;">
-		&ldquo;At the same time, I possess this dire wish to be common. I wish that I do not provide any unique significance to anyone. The lack of unique significance to others yields a relative lack of personal responsibility, and thus, greater liberty to exercise my autonomy over my self, my mind, my own body...&rdquo;
-		</p>
+		<div style="opacity: 50%;">
 		{{.Content}}
+		</div>
 	</aside>
 	<section class="article-list flexcol">
 		{{ range (where (where .Site.RegularPages "Section" "blog") "Params.nohtml" "!=" "true") }}
