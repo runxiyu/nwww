@@ -6,15 +6,14 @@
 		{{ $style := resources.Get "main.css" | resources.Minify | resources.Fingerprint }}
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	</head>
-	<body>
-		<h1>
+	<body style="text-align: center;">
+		<h1 style="margin-bottom: 2rem;">
 			{{$.Title}}
 			<small>
-				On
-				<span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
+				<a href="{{.Site.BaseURL}}">Runxi Yu</a>
 			</small>
 		</h1>
-		<section class="article-list">
+		<section class="article-list" style="text-align: center;">
 			{{ range (where (where .Site.RegularPages "Section" "poems") "Params.nohtml" "!=" "true") }}
 			{{- if .OutputFormats.Get "html" }}
 			<div class="article">
@@ -24,6 +23,6 @@
 			{{ end }}
 			{{ end }}
 		</section>
-		{{ partial "footer.html" . }}
+		<!--{{ partial "footer.html" . }}-->
 	</body>
 </html>

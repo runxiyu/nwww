@@ -8,9 +8,9 @@
  */
 html {
 	font-family: dejavu sans, system-ui, sans-serif;
-	--bg: #EEEFF1;
+	--bg: hsl(32, 98%, 92%);
 	--fg: #1E1F21;
-	--boxbg: rgb(235, 235, 235);
+	--boxbg: hsl(32, 60%, 88%);
 	--border: rgb(180, 180, 180);
 	--dim-text-color: #333;
 	--link-color: #24527d;

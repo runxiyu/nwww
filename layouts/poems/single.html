@@ -3,14 +3,14 @@
 
 {{ partial "head.html" . }}
 
-<body>
+<body  style="display: block; width: fit-content; margin: auto;">
 
-<h1>
-	{{$.Title}}
-</h1>
 
 <main>
 	<article class="literary">
+		<h1>
+			{{$.Title}}
+		</h1>
 		{{.Content}}
 	</article>
 </main>
