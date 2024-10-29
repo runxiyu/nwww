@@ -7,7 +7,7 @@
  * Not some in-browser JS bullshit on an external site.
  */
 html {
-	font-family: dejavu sans, system-ui, sans-serif;
+	font-family: system-ui, sans-serif;
 	--bg: hsl(32, 98%, 92%);
 	--fg: #1E1F21;
 	--boxbg: hsl(32, 60%, 88%);
