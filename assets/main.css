@@ -26,6 +26,9 @@ code, pre {
 .literary {
 	font-family: "TeX Gyre Pagella", "Palatino", serif;
 }
+.poem {
+    max-width: 35rem;
+}
 
 body {
 	margin: 0 auto;
