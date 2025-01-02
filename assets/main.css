@@ -27,7 +27,8 @@ code, pre {
 	font-family: "TeX Gyre Pagella", "Palatino", serif;
 }
 .poem {
-    max-width: 35rem;
+	max-width: 35rem;
+	white-space: nowrap;
 }
 
 body {
@@ -75,7 +76,7 @@ h1 small {
 }
 
 .index {
-	max-width: 920px;
+	max-width: 1150px;
 }
 
 .article-list .article {
@@ -329,8 +330,14 @@ td.th-like, th {
 	opacity: 50%;
 }
 
+.index-text-area {
+	opacity: 50%;
+	margin-top: 2rem;
+}
+
 
 /* 
  * vim: ts=8 sw=8 noexpandtab
  * I don't understand people who indent with two spaces.
  */
+
