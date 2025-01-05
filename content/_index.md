@@ -23,5 +23,5 @@ That these late mouths should cry open<br/>
 In a forest of frost, in a dawn of cornflowers.
 </div>
 
-From *The Collected Poems by Sylvia Plath*.<br/>
+From *The Collected Poems by Sylvia Plath*<br/>
 Copyright © 1981 The Estate of Sylvia Plath
