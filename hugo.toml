@@ -8,5 +8,9 @@ blog = "/blog/:filename"
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.goldmark.parser.attribute]
+block = true
+title = true
+
 [markup.tableOfContents]
 ordered = true

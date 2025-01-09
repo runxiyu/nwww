@@ -2,6 +2,9 @@
 title: Runxi Yu 于润熙
 ---
 
+Unless noted otherwise, all written content on this website are available under
+the terms of [CC0 1.0](./cc0-1.0/).
+
 <div class="literary poem">
 <b>Poppies in October</b><br/>
 <i>By Sylvia Plath</i>
