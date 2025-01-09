@@ -2,7 +2,7 @@ function typesetLineBreaks() {
 	console.log("Typesetting line breaks...");
 	const lib = window.texLineBreak_lib;
 	const h = lib.createHyphenator(window["texLineBreak_hyphens_en-us"]);
-	const paras = [...document.querySelectorAll("p")].filter(p => !p.closest(".poem"));
+	const paras = [...document.querySelectorAll("p")].filter(p => !p.closest(".poem") && !p.closest(".chinese"));
 	lib.justifyContent(paras, h);
 	console.log("Done typesetting line breaks.");
 }
