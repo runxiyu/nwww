@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 	const cache = new Map();
 
-	function fetchPage(url) {
+	function fetch_page(url) {
 		console.log(`Fetching ${url}`);
 		return fetch(url)
 			.then(response => response.text())
@@ -12,31 +12,70 @@ document.addEventListener('DOMContentLoaded', function() {
 			.catch(error => console.error(`Failed to fetch ${url}:`, error));
 	}
 
-	function replaceDOM(html, url) {
+	function replace_dom(html, url, update_history = true) {
 		const parser = new DOMParser();
 		const doc = parser.parseFromString(html, 'text/html');
 		document.documentElement.innerHTML = doc.documentElement.innerHTML;
-		document.dispatchEvent(new Event('DOMContentLoaded')); // Make sure event listeners are still attached
-	        window.scrollTo(0, 0);
-	        history.pushState(null, '', url);
+		if (update_history) {
+			history.pushState({ url: url }, '', url);
+		}
+
+		const fragment = url.split('#')[1];
+		if (fragment) {
+			const element = document.getElementById(fragment);
+			if (element) {
+				element.scrollIntoView();
+			}
+		} else {
+			window.scrollTo(0, 0);
+		}
+
+		attach_event_listeners();
 	}
 
-	document.querySelectorAll('a').forEach(anchor => {
-		anchor.addEventListener('mouseover', function() {
-			const url = anchor.href;
-			if (url && !cache.has(url)) {
-				fetchPage(url);
-			}
-		});
+	function handle_anchor_click(event) {
+		event.preventDefault();
+		const url = event.currentTarget.href;
+		if (url && cache.has(url)) {
+			replace_dom(cache.get(url), url);
+		} else {
+			fetch_page(url).then(html => replace_dom(html, url));
+		}
+	}
 
-		anchor.addEventListener('click', function(event) {
-			event.preventDefault();
-			const url = anchor.href;
-			if (url && cache.has(url)) {
-				replaceDOM(cache.get(url), url);
+	window.addEventListener('popstate', function(event) {
+		if (event.state && event.state.url) {
+			const url = event.state.url;
+			if (cache.has(url)) {
+				replace_dom(cache.get(url), url, false);
 			} else {
-				fetchPage(url).then(html => replaceDOM(html, url));
+				fetch_page(url).then(html => replace_dom(html, url, false));
 			}
-		});
+		}
 	});
+
+	function attach_event_listeners() {
+		document.querySelectorAll('a').forEach(anchor => {
+			if (anchor.getAttribute('href').startsWith('#')) {
+				return;
+			}
+
+			let hoverTimeout;
+			anchor.addEventListener('mouseover', function() {
+				const url = anchor.href;
+				if (url && !cache.has(url)) {
+					hoverTimeout = setTimeout(() => fetch_page(url), 100);
+				}
+			});
+
+			anchor.addEventListener('mouseout', function() {
+				clearTimeout(hoverTimeout);
+			});
+
+			anchor.addEventListener('click', handle_anchor_click);
+			anchor.addEventListener('touchstart', handle_anchor_click);
+		});
+	}
+
+	attach_event_listeners();
 });
