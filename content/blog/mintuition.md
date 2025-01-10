@@ -3,6 +3,8 @@ title: Do we have any good reasons to trust our moral intuition?
 date: 2024-10-16
 ---
 
+*This essay was submited to the John Locke Essay Competition in 2024.*
+
 # Introduction
 
 Let us first make a distinction between two notions of trusting moral
