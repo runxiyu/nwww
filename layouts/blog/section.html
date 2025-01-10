@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>{{.Title}}</title>
-		{{ $style := resources.Get "main.css" | resources.Minify | resources.Fingerprint }}
-		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+		<link rel="stylesheet" href="https://webpouch.runxiyu.org/runxiyu.css" />
 	</head>
 	<body>
 		<main>
