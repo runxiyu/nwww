@@ -1,5 +1,5 @@
 ---
-title: flicker
+title: Flicker
 ---
 
 i am a flickering lightbulb\

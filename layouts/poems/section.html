@@ -7,15 +7,13 @@
 	</head>
 	<body style="text-align: center;">
 		<h1 style="margin-bottom: 2rem;">
-			{{$.Title}}
-			<small>
-				<a href="{{.Site.BaseURL}}">Runxi Yu</a>
-			</small>
+			{{$.Title}}<br/>
+			<a style="font-size: 75%;" href="{{.Site.BaseURL}}">Runxi Yu</a>
 		</h1>
 		<section class="article-list" style="text-align: center;">
 			{{ range (where (where .Site.RegularPages "Section" "poems") "Params.nohtml" "!=" "true") }}
 			{{- if .OutputFormats.Get "html" }}
-			<div class="article">
+			<div class="article" style="margin-bottom: 1ex;">
 			<!-- <span class="date">{{.Date.Format "January 2, 2006"}}</span> -->
 				<a href="{{.Permalink}}">{{.Title}}</a>
 			</div>

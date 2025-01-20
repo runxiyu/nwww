@@ -1,5 +1,5 @@
 ---
-title: sugar glass
+title: Sugar glass
 ---
 
 lungs filled with pyro i press my finger against\
