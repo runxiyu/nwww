@@ -27,7 +27,7 @@ scripts. (The official
 [alpine-chroot-install](https://github.com/alpinelinux/alpine-chroot-install/)
 scripts exist but haven't been updated for quite a while.)
 
-## [The rxchroot scripts](https://git.sr.ht/~runxiyu/rxchroot)
+## [The rxchroot scripts](https://git.runxiyu.org/rxchroot)
 
 Check the Git repository linked above for the complete set of scripts;
 here is a short explanation from excerpts of the script.
