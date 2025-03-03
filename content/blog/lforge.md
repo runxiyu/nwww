@@ -131,7 +131,7 @@ be for actionable tasks).
 complicated for us to implement at the moment. We'll probably start with
 allowing people to authenticate via matching SSH keys on other forges (e.g.
 fetching `https://meta.sr.ht/~runxiyu.keys` and
-`https://github.com/runxiy.keys` to match identities). We'll see how it goes.
+`https://github.com/runxiyu.keys` to match identities). We'll see how it goes.
 
 ## Other things
 
