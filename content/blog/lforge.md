@@ -62,7 +62,9 @@ And for maintainer:
 This is much more convenient but comes with a few tradeoffs: There is no way to
 preserve the author's commit signatures if desired, it is very difficult to
 design a good web interface to display patchsets properly, and sending v2
-patches is sometimes painful.
+patches is sometimes painful... and it just doesn't feel sufficiently
+integrated with Git. I want to be able to just push to a special branch to
+update my merge request.
 
 So I came up with a solution. Let the contributor do this:
 
