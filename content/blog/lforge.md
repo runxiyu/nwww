@@ -7,10 +7,17 @@ When contributing to free software projects, I often get frustrated over the
 workflow of forges like Forgejo/GitHub, and to a lesser extent, SourceHut.
 Therefore we've decided to create our own forge,
 [Lindenii Forge](https://lindenii.runxiyu.org/forge/).
-(It's currently still under development, although it's slowed down a bit since
+
+It's currently still under development, although it's slowed down a bit since
 I have an English Literature exam this Wednesday, Philosophy this Friday,
 Chinese and Physics next week, and Math the week after that. Any contributions
-are welcome though!)
+are welcome though!
+
+We hang out in [`#lindenii`](https://webirc.runxiyu.org/kiwiirc/#lindenii) on
+[irc.runxiyu.org](https://irc.runxiyu.org), and
+[`#lindenii`](https://web.libera.chat/#lindenii) on
+[Libera.Chat](https://libera.chat).
+
 
 Here are some things that we plan to implement that make it stand out a bit.
 
