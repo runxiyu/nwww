@@ -30,11 +30,3 @@ In a forest of frost, in a dawn of cornflowers.
 From *The Collected Poems by Sylvia Plath*<br/>
 Copyright © 1981 The Estate of Sylvia Plath
 </section>
-
-<section style="margin-top: 1rem">
-<p>
-&ldquo;[To know whether you&rsquo;re in a dream ... computers don&rsquo;t work really well.] So either you are dreaming, or you&rsquo;re running Windows.&rdquo;<br />
-&mdash; Tom Scott
-</p>
-</section>
-

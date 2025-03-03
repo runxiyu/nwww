@@ -7,8 +7,10 @@
 
 <h1>
 	{{$.Title}}
+	<br />
 	<small>
-		On
+		<span class="date">{{.Date.Format "January 2, 2006"}}</span>
+		on
 		<span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
 	</small>
 </h1>
