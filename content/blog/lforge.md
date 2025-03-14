@@ -1,6 +1,7 @@
 ---
 title: Lindenii Forge
 date: 2025-03-03
+draft: true
 ---
 
 When contributing to free software projects, I often get frustrated over the
