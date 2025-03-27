@@ -3,20 +3,17 @@
 
 {{ partial "head.html" . }}
 
-<body class="wider-body">
+<body>
 
 <h1>{{$.Title}}</h1>
 
-<main class="index flexcols">
-	<aside class="flexcol">
+<main class="index">
+	{{ range .Sections }}
+		<p>
+			<a href="{{.Permalink}}">{{.Title}}</a>
+		</p>
+	{{ end }}
 		<table>
-			{{- /*
-			<thead>
-				<tr>
-					<th colspan="2">Runxi Yu 于润熙</th>
-				</tr>
-			</thead>
-			*/ -}}
 			<tbody>
 				<tr>
 					<th scope="row">email</th>
@@ -43,40 +40,18 @@
 					<td><strong><a href="https://git.runxiyu.org">git.rx</a></strong>, <a href="https://sr.ht/~runxiyu">sr.ht</a>, <a href="https://codeberg.org/runxiyu">codeberg</a>, <a href="https://github.com/runxiyu">github</a></td>
 				</tr>
 				<tr>
-					<th scope="row">misc</th>
-					<td><strong><a class="rss" href="poems">poems</a></strong>, <a class="rss" href="/blog/index.xml">rss</a></td>
-				</tr>
-				<tr>
-					<th scope="row">school stuff</th>
-					<td><a href="https://s1.runxiyu.org">quick share</a>, <a href="https://s2.runxiyu.org">nas</a></td>
-				</tr>
-				<tr>
 					<th scope="row">pronouns</th>
-					<td>they/<a href="/blog/zhpronoun">他</a> (please try to respect pronouns)<span style="display: none;"> Also she/her is fine if you're reading this, although you're probably not reading this because I'm hiding this with CSS</span></td>
+					<td>they/<a href="/blog/zhpronoun">他</a></td>
 				</tr>
 				<tr>
 					<th scope="row">zoneinfo</th>
 					<td>Asia/Shanghai +0800</td>
 				</tr>
-
 			</tbody>
 		</table>
 		<div class="index-text-area">
 		{{.Content}}
 		</div>
-	</aside>
-	<section class="article-list flexcol">
-		{{ range (where (where .Site.RegularPages "Section" "blog") "Params.nohtml" "!=" "true") }}
-		{{- if .OutputFormats.Get "html" }}
-		<div class="article">
-			<span class="date">{{.Date.Format "January 2, 2006"}}</span>
-			<a href="{{.Permalink}}">{{.Title}}</a>
-		</div>
-		{{ end }}
-		{{ end }}
-	</section>
-
-
 </main>
 {{ partial "footer.html" . }}
 

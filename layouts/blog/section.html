@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<h1>
-			General Blog
+			{{ .Title }}
 			<br />
 			<small style="font-weight: bold;">
 				On <span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
@@ -16,7 +16,7 @@
 		</h1>
 		<main>
 			<section class="article-list flexcol">
-				{{ range (where (where .Site.RegularPages "Section" "blog") "Params.nohtml" "!=" "true") }}
+				{{ range .Pages }}
 				{{- if .OutputFormats.Get "html" }}
 				<div class="article">
 					<span class="date">{{.Date.Format "January 2, 2006"}}</span>
