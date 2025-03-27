@@ -7,8 +7,24 @@
 		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	</head>
 	<body>
+		<h1>
+			General Blog
+			<br />
+			<small style="font-weight: bold;">
+				On <span class="site"><a href="{{.Site.BaseURL}}">{{.Site.Title}}</a></span>
+			</small>
+		</h1>
 		<main>
-			My blog index is on the <a href="/">home page</a>.
+			<section class="article-list flexcol">
+				{{ range (where (where .Site.RegularPages "Section" "blog") "Params.nohtml" "!=" "true") }}
+				{{- if .OutputFormats.Get "html" }}
+				<div class="article">
+					<span class="date">{{.Date.Format "January 2, 2006"}}</span>
+					<a href="{{.Permalink}}">{{.Title}}</a>
+				</div>
+				{{ end }}
+				{{ end }}
+			</section>
 		</main>
 		{{ partial "footer.html" . }}
 	</body>

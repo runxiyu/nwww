@@ -87,7 +87,7 @@ h1 small {
 	margin-bottom: 1rem;
 }
 
-.index .article-list .date {
+.article-list .date {
 	display: block;
 	color: var(--dim-text-color);
 }
