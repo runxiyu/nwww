@@ -7,5 +7,6 @@
 	<title>{{$.Title}}</title>
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://runxiyu.org/blog/index.xml" />
 	<link rel="icon" type="image/png" href="/avatar.png" />
-	<link rel="stylesheet" href="https://webpouch.runxiyu.org/runxiyu.css" />
+	{{ $style := resources.Get "main.css" | resources.Minify | resources.Fingerprint }}
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
