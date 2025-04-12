@@ -3,30 +3,23 @@ title: Runxi Yu 于润熙
 ---
 
 Unless noted otherwise, all written content on this website are available under
-the terms of [CC0 1.0](./cc0-1.0/).
+the terms of [CC0 1.0](./cc0-1.0/) or are otherwise identified to be in the
+public domain.
 
 <section>
-<div class="literary poem">
-<b>Poppies in October</b><br/>
-<i>By Sylvia Plath</i>
-
-Even the sun-clouds this morning cannot manage such skirts.<br/>
-Nor the woman in the ambulance<br/>
-Whose red heart blooms through her coat so astoundingly &mdash;
-
-A gift, a love gift<br/>
-Utterly unasked for<br/>
-By a sky
-
-Palely and flamily<br/>
-Igniting its carbon monoxides, by eyes<br/>
-Dulled to a halt under bowlers.
-
-O my God, what am I<br/>
-That these late mouths should cry open<br/>
-In a forest of frost, in a dawn of cornflowers.
-</div>
-
-From *The Collected Poems by Sylvia Plath*<br/>
-Copyright © 1981 The Estate of Sylvia Plath
+<blockquote>
+<p>
+Let the President violate the law, let him exploit the trappings of his office for personal gain, let him use his official power for evil ends. Because if he knew that he may one day face liability for breaking the law, he might not be as bold and fearless as we would like him to be.
+</p>
+<p>
+…
+</p>
+<p>
+With fear for our democracy, I dissent.
+</p>
+<p>
+&mdash;
+<a href="https://www.supremecourt.gov/opinions/23pdf/23-939_e2pg.pdf"><i>Trump</i> v. <i>United States</i>, 603 U.S. 593 (2024)</a> (Sotomayor, J., dissenting).
+</p>
+</blockquote>
 </section>
