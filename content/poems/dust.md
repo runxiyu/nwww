@@ -1,5 +1,6 @@
 ---
 title: 灰
+draft: true
 ---
 
 <div class="chinese">

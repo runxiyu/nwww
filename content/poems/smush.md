@@ -1,5 +1,6 @@
 ---
 title: Smush
+draft: true
 ---
 
 Begone the shallow fears and\

@@ -1,5 +1,6 @@
 ---
 title: Sinus beat
+draft: true
 ---
 
 When my last sinus cell fires,\

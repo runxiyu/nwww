@@ -1,5 +1,6 @@
 ---
 title: Tired fantasies
+draft: true
 ---
 
 <div style="border: 1px dashed #ff4a4a; background-color: #ff4a4a22; padding: 0.5rem; text-align: center; font-weight: 1000; font-size: 100%; display: inline-block;">

@@ -1,5 +1,6 @@
 ---
 title: Seventeen Days
+draft: true
 ---
 
 I am\

@@ -1,5 +1,6 @@
 ---
 title: Words and ink
+draft: true
 ---
 
 It is, I suppose, a particular kind of catharsis. The kind that lets me

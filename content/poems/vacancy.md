@@ -1,5 +1,6 @@
 ---
 title: Vacancy
+draft: true
 ---
 
 Wickedly gazing at the neglected trail\
